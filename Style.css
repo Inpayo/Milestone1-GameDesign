@@ -1,40 +1,119 @@
+*{
+    color: white;
+}
+main {
+    margin: 10px;
+}
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(35, 40, 35);
+    margin: 0;
+    padding: 0;
 }
-
-div {
+img.banner {
     display: flex;
-    position: relative;
+    width: 100%;
+    max-height: 300px;
+    height: auto;
+    margin: 0;
+    overflow-y: hidden;
 }
-
-div.navigation {
-    position: fixed;
+.navigation {
+    display: flex;
+    position: sticky;
     margin: 0%;
     height: 40px;
     width: 100%;
     background: rgb(32, 32, 32);
     align-items: center;
-    flex-direction: row;
     top: 0%;
     left: 0%;
+    overflow: hidden;
 }
-
-div.analysis {
-    justify-content: flex-end;
+.navigation header {
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    min-width: 235px;
 }
-
-div.analysis a {
-    align-items: center;
-    border-radius: 12px;
-    padding: 4px;
-}
-
-div.prediction {
-    padding: 4px;
+.navigation ul {
+    display: inline-flex;
+    right: 0%;
+    list-style-type: none;
 }
 
 .navigation a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    padding: 10px;
+    border-radius: 10%;
+}
+.active {
+    background-color: rgb(52, 122, 52);
+}
+.navigation a:hover {
+    cursor: pointer;
+    background-color: rgb(52, 122, 52);
+
+}
+div.empty_spc {
+    width: 68%;
+    height: auto;
+}
+.analysis {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.analysis header {
+    font-size:xx-large;
+    display: flex;
+    margin: auto;
+}
+div.card{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    border: 10px;
+    border-color: aqua;
+}
+.card img{
+    width: fit-content;
+}
+.card .text {
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(53, 60, 53);
+    padding: 20px;
+    padding-top: 10px;
+    font-size: larger;
+}
+.card a{
+    text-decoration: none;
+    color: rgb(97, 97, 212);
+}
+.card a:hover{
+   cursor: pointer;
+}
+.card button{
+    display: block;
+    border-radius: 10%;
+    background-color: rgb(79, 161, 79);
+    width: 180px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 0;
+    justify-content: center;
+}
+.card button a{
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
 }
