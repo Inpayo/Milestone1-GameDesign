@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    display: flex;
+    position: relative;
+}
+
+div.navigation {
+    position: fixed;
+    margin: 0%;
+    height: 40px;
+    width: 100%;
+    background: rgb(32, 32, 32);
+    align-items: center;
+    flex-direction: row;
+    top: 0%;
+    left: 0%;
+}
+
+div.analysis {
+    justify-content: flex-end;
+}
+
+div.analysis a {
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+div.prediction {
+    padding: 4px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
