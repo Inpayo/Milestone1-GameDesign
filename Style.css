@@ -2,7 +2,7 @@
     color: white;
 }
 main {
-    margin: 10px;
+    margin: 10px 0 0;
 }
 body {
     background-color: rgb(35, 40, 35);
@@ -46,7 +46,7 @@ img.banner {
     color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 .active {
     background-color: rgb(52, 122, 52);
@@ -60,15 +60,14 @@ div.empty_spc {
     width: 68%;
     height: auto;
 }
-.analysis {
+.content {
     display: flex;
     width: 80%;
     height: auto;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
     flex-direction: column;
 }
-.analysis header {
+.content header {
     font-size:xx-large;
     display: flex;
     margin: auto;
@@ -76,10 +75,12 @@ div.empty_spc {
 div.card{
     display: flex;
     width: 80%;
+    min-width: 500px    ;
     margin: auto;
     height: auto;
     border: 10px;
     border-color: aqua;
+    overflow: hidden;
 }
 .card img{
     width: fit-content;
@@ -89,10 +90,12 @@ div.card{
     align-content: stretch;
     flex-direction: column;
     width: 50%;
+    min-width: 210px;
     background-color: rgb(53, 60, 53);
     padding: 20px;
     padding-top: 10px;
     font-size: larger;
+    overflow: hidden;
 }
 .card a{
     text-decoration: none;
@@ -103,7 +106,7 @@ div.card{
 }
 .card button{
     display: block;
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: rgb(79, 161, 79);
     width: 180px;
     height: 60px;
@@ -116,4 +119,22 @@ div.card{
     text-decoration: none;
     font-weight: bold;
     font-size: x-large;
+}
+.card img{
+    width: 50%;
+    height: auto;
+}
+.endcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0%;
+    height: auto;
+    width: 100%;
+    background: rgb(32, 32, 32);
+    align-items: center;
+    overflow: hidden;
+}
+.endcard .student_details li{
+    list-style: none;
 }
